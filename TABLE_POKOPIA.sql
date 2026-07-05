@@ -1,26 +1,31 @@
 
 CREATE TABLE Environment(
     Name TEXT,
+    FlatName TEXT,
     EnvId INTEGER PRIMARY KEY
 );
 
 CREATE TABLE Habitat(
     Name TEXT,
+    FlatName TEXT,
     HabId INTEGER PRIMARY KEY    
 );
 
 CREATE TABLE Food(
     Name TEXT,
+    FlatName TEXT,
     FoodId INTEGER PRIMARY KEY    
 );
 
 CREATE TABLE Speciality(
     Name TEXT,
+    FlatName TEXT,
     SpeId INTEGER PRIMARY KEY    
 );
 
 CREATE TABLE Affinity(
     Name TEXT,
+    FlatName TEXT,
     AffId INTEGER PRIMARY KEY
 );
 
@@ -34,6 +39,7 @@ CREATE TABLE IncompatibleEnvironment(
 
 CREATE TABLE Pokemon(
     Name TEXT,
+    FlatName TEXT,
     PokId INTEGER PRIMARY KEY,
     Sprite TEXT
 );
